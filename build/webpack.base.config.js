@@ -21,7 +21,7 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         loader: 'url',
         query: {
-          limit: 10000,
+          limit: 500000,
           name: '[name].[ext]?[hash]'
         }
       },

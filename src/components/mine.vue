@@ -15,14 +15,13 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
   .mdl-progress{
     position: fixed;
-    top: 0;
+    top: 20;
     width: 100%;
-    z-index: 10;
   }
 </style>
 <template>
-  <div v-if="show" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+  <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
 </template>

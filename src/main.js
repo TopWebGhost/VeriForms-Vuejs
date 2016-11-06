@@ -10,6 +10,7 @@ Vue.use(VueRouter);
 Vue.use(VueAsyncData);
 
 Vue.config.debug = true;
+Vue.config.devtools = true;
 
 // filter
 var filter = require('./filter');

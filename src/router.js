@@ -1,11 +1,17 @@
 module.exports = function(router){
 	router.map({
+        //'/': {
+			//name:'home',
+        //    component: function (resolve) {
+			//  require(['./components/index.vue'], resolve)
+			//}
+        //},
 		'/': {
 			name:'home',
-            component: function (resolve) {
-			  require(['./components/index.vue'], resolve)
+			component: function (resolve) {
+				require(['./components/home.vue'], resolve)
 			}
-        },
+		},
         '/write': {
         	name:'write',
             component: function (resolve) {
@@ -33,7 +39,7 @@ module.exports = function(router){
     })
 
     router.redirect({
-      // 重定向任意未匹配路径到 /
+
       '*': '/'
     })
 	
