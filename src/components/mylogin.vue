@@ -55,7 +55,8 @@ export default {
     top: 100px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    border-top: solid 5px #8dc63f;
+    border-top: solid 5px white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #login-dlg p, #login-dlg h3 {
     margin: 0;
@@ -65,10 +66,11 @@ export default {
     display: inline;
   }
   #login-dlg .title {
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     position: relative;
-    background: orange;
+    background: #8dc63f;
+    color: white;
   }
   #login-dlg .title p {
     margin: 0;
@@ -77,7 +79,7 @@ export default {
   }
   #login-dlg .title i {
     position: absolute;
-    top: 6px;
+    top: 16px;
     right: 10px;
     font-size: 20px;
   }
@@ -90,6 +92,7 @@ export default {
   }
   .loginAs h3, .loginWith h3 {
     text-align: left;
+    font-size: 20px;
   }
   #login-dlg .loginAs h3 {
     margin-bottom: 10px;
@@ -122,7 +125,9 @@ export default {
     padding: 10px 0;
     font-size: 30px;
   }
-
+  #login-dlg .loginWith h3 {
+    margin-bottom: 10px;
+  }
   .selectSocials li {
     width: 50px;
     height: 50px;

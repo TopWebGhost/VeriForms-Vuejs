@@ -1,41 +1,17 @@
 module.exports = function(router){
 	router.map({
-        //'/': {
-			//name:'home',
-        //    component: function (resolve) {
-			//  require(['./components/index.vue'], resolve)
-			//}
-        //},
 		'/': {
 			name:'home',
 			component: function (resolve) {
 				require(['./components/home.vue'], resolve)
 			}
 		},
-        '/write': {
-        	name:'write',
-            component: function (resolve) {
-			  require(['./components/write.vue'], resolve)
+		'formlists': {
+			name:'formlists',
+			component: function (resolve) {
+				require(['./components/formlists.vue'], resolve)
 			}
-        },
-        '/edit/:id': {
-        	name:'edit',
-            component: function (resolve) {
-			  require(['./components/write.vue'], resolve)
-			}
-        },
-        '/test': {
-        	name:'write',
-            component: function (resolve) {
-			  require(['./components/await.vue'], resolve)
-			}
-        },
-        'entry/:id':{
-        	name:'entry',
-        	component: function (resolve) {
-			  require(['./components/entry.vue'], resolve)
-			}
-        }
+		},
     })
 
     router.redirect({

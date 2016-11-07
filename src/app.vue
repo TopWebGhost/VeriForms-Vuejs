@@ -5,12 +5,6 @@ import navbar from './components/navbar.vue'
 import footer from './components/footer.vue'
 export default {
   components: {
-    'login': function(resolve) {
-      require(['./components/login.vue'], resolve)
-    },
-    'modal': function(resolve) {
-      require(['./components/modal.vue'], resolve)
-    },
     'loading': loading,
     'topheader': navbar,
     'bottomfooter': footer,
