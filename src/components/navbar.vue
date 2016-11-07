@@ -1,6 +1,11 @@
 <script>
+import store from '../store/index'
 export default {
-
+  methods:{
+    showLogin(){
+      store.actions.showLogin();
+    },
+  }
 }
 
 </script>
@@ -63,6 +68,23 @@ export default {
     -ms-border-radius: 7px;
     border-radius: 7px;
 }
+#header .btn {
+	border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px 15px !important;
+    min-width: 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+#header .btn:hover {
+    background: #99cc53 !important;
+    border-color: #99cc53 !important;
+    color: white;
+}
+#header .btn:focus {
+	outline: none;
+}
 </style>
 <template>
 	<div id="header">
@@ -77,9 +99,8 @@ export default {
 				</ul>
 				<h1 id="logo"><a href="index.html">VeriForms<span></span></a></h1>
 				<ul class="pull-right right-menu">
-
-					<li><a href="#">Login</a></li>
-					<li class="menu-btn"><a href="#">Sign up</a></li>
+					<li><button class="btn btn-outline" @click="showLogin">Login</button></li>
+					<li ><button class="btn btn-outline">Sign up</button></li>
 				</ul>
 			</nav>
 		</div>

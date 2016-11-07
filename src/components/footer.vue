@@ -4,8 +4,73 @@ export default {
 }
 
 </script>
-<style>
 
+<style>
+	#subscribe-div {
+		background: #f9f9f9;
+        padding: 3em 0;
+	}
+	#footer-div {
+		background: white;
+		padding-top: 30px;
+	}
+	#footer-div .copyright-div {
+	    border-top: 1px solid #f0f2f3;
+        padding: 10px 0;
+
+	}
+	#subscribe-div form {
+	    position: relative;
+	}
+	#subscribe-div form i {
+	    position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        left: 15px;
+        font-size: 20px;
+	}
+	#subscribe-div form input[type='email'] {
+		width: 100%;
+        background: #ededed;
+        border: none;
+        padding-left: 50px;
+        padding-right: 170px;
+	}
+	#subscribe-div form input[type='submit'] {
+	    position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: -4px;
+        height: 54px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 20px;
+        font-weight: 300;
+        width: 160px;
+    }
+    .footer-widget .links li{
+    	padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+    .footer-widget .links,  .footer-widget .socials{
+        padding: 0;
+        margin: 0;
+    }
+    .socials li {
+    	padding: 0;
+        margin: 0;
+        display: inline;
+    }
+    .socials li a {
+        padding: 4px 7px;
+        font-size: 22px;
+    }
+    .footer-widget a{
+        color: #6a7885;
+    }
 </style>
 <template>
 	<div id="footer">
@@ -26,9 +91,9 @@ export default {
 			<div class="container">
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
+						<div class="footer-widget">
 							<h3>Company</h3>
-							<ul class="fh5co-links">
+							<ul class="links">
 								<li><a href="#">About Us</a></li>
 								<li><a href="#">Careers</a></li>
 								<li><a href="#">Feature Tour</a></li>
@@ -39,9 +104,9 @@ export default {
 					</div>
 
 					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
+						<div class="footer-widget">
 							<h3>Support</h3>
-							<ul class="fh5co-links">
+							<ul class="links">
 								<li><a href="#">Knowledge Base</a></li>
 								<li><a href="#">24/7 Call Support</a></li>
 								<li><a href="#">Video Demos</a></li>
@@ -52,7 +117,7 @@ export default {
 					</div>
 
 					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
+						<div class="footer-widget">
 							<h3>Contact Us</h3>
 							<p>
 								<a href="mailto:info@freehtml5.co">info@freehtml5.co</a> <br>
@@ -64,14 +129,14 @@ export default {
 					</div>
 
 					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
+						<div class="footer-widget">
 							<h3>Follow Us</h3>
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-google-plus"></i></a></li>
-								<li><a href="#"><i class="icon-instagram"></i></a></li>
-								<li><a href="#"><i class="icon-youtube-play"></i></a></li>
+							<ul class="socials">
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -79,12 +144,11 @@ export default {
 				</div>
 
 			</div>
-			<div class="fh5co-copyright animate-box">
+			<div class="copyright-div animate-box">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="fh5co-left"><small>&copy; 2016 <a href="index.html">Guide</a> free html5. All Rights Reserved.</small></p>
-							<p class="fh5co-right"><small class="fh5co-right">Designed by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></small></p>
+							<p class="fh5co-left"><small>&copy; 2016 <a href="index.html">Guide</a>All Rights Reserved.</small></p>
 						</div>
 					</div>
 				</div>

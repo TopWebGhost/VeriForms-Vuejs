@@ -15,6 +15,11 @@ export default {
 	.banner {
 		position: relative;
 		height: 700px;
+		background-image: url(../assets/img/cover_image_paceholder.jpg);
+		background-color: transparent;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
 	}
 	.overlay {
 		position: absolute;
@@ -74,8 +79,8 @@ export default {
         border-radius: 50%;
     }
     .arrow i{
-        top: 15px;
-        left: 1px;
+        top: 14px;
+     	font-size: 25px;
         position: relative;
         color: #fff;
         vertical-align: middle;
@@ -86,19 +91,17 @@ export default {
 		<div class="banner">
 			<div class="overlay">
 			</div>
-			<div class="image-banner">
-				<img src="../assets/img/cover_image_paceholder.jpg">
-			</div>
+
 			<div class="text-banner">
             	<h2 class="animate-box text-div">Create Awesome Things for Better Web</h2>
             	<p class="animate-box btn-div">
-            		<a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-outline btn-video"><i class="glyphicon glyphicon-play"></i> Watch video</a>
+            		<a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-outline btn-video"><i class="fa fa-play"></i> Watch video</a>
             		<a href="http://freehtml5.co" target="_blank" class="btn btn-outline btn-primary">Try Demo</a>
             	</p>
             </div>
             <div class="animate-box scroll-div">
             	<a href="#" class="scroll-btn">
-                   	<span class="arrow"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                   	<span class="arrow"><i class="fa fa-angle-down"></i></span>
                 </a>
             </div>
 		</div>

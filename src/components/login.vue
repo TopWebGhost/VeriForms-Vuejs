@@ -145,7 +145,7 @@ export default {
   }
 </style>
 <template>
-  <div class="login-bg" v-if="login.show">
+  <div class="login-bg" v-if="!login.show">
     <div class="login-card-wide mdl-card mdl-shadow--2dp">
       <div class="mdl-card__title">
         <h2 class="mdl-card__title-text">Please Login</h2>
