@@ -3,6 +3,7 @@ import mylogin from './components/mylogin.vue'
 import loading from './components/loading.vue'
 import navbar from './components/navbar.vue'
 import footer from './components/footer.vue'
+import store from './store/index'
 export default {
   components: {
     'loading': loading,
@@ -17,7 +18,6 @@ export default {
   <topheader></topheader>
   <mylogin></mylogin>
   <router-view></router-view>
-  <modal></modal>
   <bottomfooter></bottomfooter>
 </template>
 <style src="material-design-lite/material.css"></style>
@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
    min-width: 200px;
    font-size: 18px;
 }
+.btn-primary:focus, .btn-primary.focus {
+  background: #99cc53 !important;
+  border-color: #99cc53 !important;
+}
 .btn-primary:hover {
   background: #99cc53 !important;
   border-color: #99cc53 !important;
@@ -83,6 +87,31 @@ h1, h2, h3, h4, h5, h6 {
 .my-transition-enter, .my-transition-leave-enter {
     padding-left: 10px;
     opacity: 0;
+}
+
+.v-select .form-control{
+    height: 30px;
+}
+.v-select {
+    width: 170px;
+}
+.v-select input[type='search'] {
+    visibility: hidden;
+}
+.v-select .dropdown-toggle {
+    display: flex !important;
+}
+.v-select .selected-tag {
+    background: white !important;
+    border: none !important;
+    display: table !important;
+}
+.v-select .highlight a, .v-select li:hover>a {
+    background: #8dc63f !important;
+    color: white !important;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: white;
 }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto+Mono:100,100i,300,500,700" rel="stylesheet">

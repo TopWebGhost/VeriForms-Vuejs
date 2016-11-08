@@ -13,23 +13,11 @@ if (!currentUser) {
 Vue.use(Vuex)
 
 const state = {
-    Cloud: AV,
     login: {
         show: false
     },
-    sign: {
-        show: false
-    },
-    modal: {
-        show: false,
-        title: '',
-        text: ''
-    },
-    logined: {
-        value: logined,
-        user:currentUser
-    },
     loading:true,
+    currentRoute: "/",
     common: {
         isEmail: new RegExp("([A-Za-z0-9][-A-Za-z0-9]+\@)+([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}")
     }

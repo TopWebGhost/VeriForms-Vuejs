@@ -14,7 +14,7 @@ export default {
 	}
 	.banner {
 		position: relative;
-		height: 700px;
+		height: 600px;
 		background-image: url(../assets/img/cover_image_paceholder.jpg);
 		background-color: transparent;
 		background-size: cover;
