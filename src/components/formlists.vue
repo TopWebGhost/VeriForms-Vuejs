@@ -25,11 +25,7 @@ export default {
 #formlists ul {
 	list-style: none;
 }
-#formlists > ul {
-	margin-top: 30px;
-	padding: 0;
-	border-top: solid 1px #8dc63f;
-}
+
 .formItem:hover {
 	background: #1070ad;
 	color: white;
