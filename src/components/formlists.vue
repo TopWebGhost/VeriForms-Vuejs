@@ -15,9 +15,7 @@ export default {
 			selectedTemplate:"",
 		}
 	},
-
 }
-
 </script>
 <style>
 #formlists {
